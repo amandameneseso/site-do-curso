@@ -166,6 +166,124 @@ print("Reprovado")
         </div>
 
         <h2>TEMA 4 – Glossário do Desenvolvedor de Software</h2>
+        <ul>
+            <li>Front-end: Relacionado ao desenvolvimento da parte gráfica e interativa de uma aplicação web.</li>
+            <li>Back-end: Associado ao desenvolvimento do lado do servidor, envolvendo programação que acontece no servidor, com experiência em versionamento, controle, gerenciamento de ambiente de hospedagem, acessibilidade e segurança.</li>
+            <li>Full-stack: O desenvolvedor que trabalha com ambas as abordagens: front-end e back-end.</li>
+            <li>API (Application Programming Interface): Um conjunto de rotinas e padrões de programação que permite a programas ou aplicações acessarem software ou plataformas baseados na web. É uma interface para programas, não para usuários.</li>
+            <li>Biblioteca: conjunto de código pré-escrito que oferece funções, métodos e classes para realizar tarefas específicas. Podemos pensar nela como uma "caixa de ferramentas" cheia de instrumentos que você pode pegar e usar quando precisar. O seu código é o principal responsável pelo controle do programa. Você, o desenvolvedor, decide quando e onde chamar as funções ou classes da biblioteca. São geralmente focadas em um domínio particular, como manipulação de datas, operações matemáticas, requisições HTTP. Exemplos: jQuery, Pandas, Lodash.</li>
+            <li>Framework: estrutura mais abrangente que define a arquitetura geral de um software. Ele oferece uma base sólida sobre a qual os desenvolvedores constroem seus aplicativos, ditando a estrutura e o fluxo de trabalho. Em vez de você chamar o framework, é o framework que chama o seu código. O framework é o "esqueleto" do seu aplicativo. Ele define as regras, convenções e o fluxo principal de execução. Você preenche as lacunas com seu próprio código, mas dentro da estrutura que o framework impõe. Exemplos: React, Angular, Vue.js, Django, Spring Boot, Flutter.</li>
+            <li>IDE (Integrated Development Environment): Um software que integra diversas funcionalidades para desenvolvimento em uma única interface gráfica, agilizando o processo. Exemplos: Pycharm, Eclipse, Apache Netbeans, Visual Studio.</li>
+            <li>SDK (Software Development Kit): Um kit de desenvolvimento de software composto por compilador, debugger e API, fornecido por um fabricante para desenvolver para uma plataforma ou sistema específico.</li>
+            <li>Nativo: Um aplicativo desenvolvido para uma única plataforma usando linguagens e ferramentas específicas dessa plataforma. Ex: Android SDK, Java/Kotlin para Android.</li>
+            <li>Híbridos: Aplicações que utilizam HTML, CSS e JavaScript, desenvolvidas com uma mesma base de código para várias plataformas através de frameworks ou ferramentas.</li>
+            <li>Serviços: No desenvolvimento, podem ser entendidos como processos de software executados pelo Sistema Operacional (programas).</li>
+            <li>Monolítico: abordagem arquitetônica onde aplicação que roda como um único processo.</li>
+            <li>Microsserviço: abordagem arquitetônica onde o software consiste em pequenos serviços independentes que se comunicam via APIs bem definidas. Esses serviços são autônomos e especializados. Cada microsserviço é responsável por uma funcionalidade de negócio específica e é executado em seu próprio processo, comunicando-se com outros microsserviços através de interfaces bem definidas (geralmente APIs HTTP/REST).</li>
+            <li>SOAP (Service-Oriented Architecture Protocol): Um protocolo de arquitetura orientada a serviços que utiliza arquivos XML e protocolo HTTP para transporte.</li>
+            <li>REST (REpresentational State Transfer): Um conjunto de restrições para criação de webservices que utiliza arquivos JSON. Um serviço que implementa esse padrão é chamado de Restfull. A maioria das APIs RESTful usa HTTP como protocolo de transporte.</li>
+            <p>Nota: SOAP e REST são duas abordagens distintas para a criação e consumo de Webservices (ou APIs). Eles definem como os aplicativos trocam informações.</p>
+            <li>Webservices: São independentes de linguagem e realizam a comunicação entre aplicações. Ferreira (2021) afirma que todo Webservice é uma API, mas nem toda API é um Webservice. Isso significa que API é um conceito muito mais amplo e abrangente, enquanto Web Service é uma subcategoria de API com características mais específicas. Então, quando você interage com a API do Google Maps para obter coordenadas, você está usando uma API que é também um Web Service. Mas se um programa no seu computador usa a API do sistema operacional para salvar um arquivo, ele está usando uma API que não é um Web Service, pois a comunicação não é pela web.</li>
+            <li>Commit: O ato de enviar alterações de um trecho de código, criando uma nova versão do projeto. Geralmente inclui o código modificado e uma explicação das alterações.</li>
+            <li>Versionamento: Atribuição de um número de versão ao estado do projeto, criando versões à medida que o desenvolvimento avança4546.</li>
+            <li>Snapshot: Uma cópia instantânea de um volume em um determinado momento.</li>
+            <li>Git: Um sistema de controle de versão criado por Linus Torvalds que gerencia as várias versões no desenvolvimento de um documento.</li>
+            <li>Github: Uma plataforma de desenvolvedor completa que utiliza o Git como sistema de controle. É um servidor para hospedar repositórios Git, embora existam outros como Gitlab, Bitbucket e Apache Allura.</li>
+            <li>Debug: O processo de depurar o programa, ou seja, encontrar e resolver erros (chamados de "bugs" na área de TI).</li>
+        </ul>
+
+        <h2>TEMA 5 – Ciclo de Vida de Software (SDLC)</h2>
+        <p>O ciclo de vida de um software (Software Development Life Cycle – SDLC), também chamado de modelo de processo, é uma representação simplificada de um processo de software, funcionando como um roteiro de passos previsíveis. Ele indica as etapas e a sequência para o desenvolvimento do software, trazendo ordem, controle, estabilidade e organização.</p>
+        <p>Segundo Sommerville (2019), quatro atividades são comuns a todos os processos de software:</p>
+        <ul>
+            <li>Especificação: Definição do problema, funcionalidade e restrições do software. Envolve a reunião com o cliente para levantamento de requisitos (funcionais, que o software deve fazer; e não funcionais, que são restrições).</li>
+            <li>Desenvolvimento: Codificação do software de acordo com as especificações, incluindo a escolha da linguagem de programação.</li>
+            <li>Validação: Análise do programa para garantir que atenda ao que foi solicitado pelo cliente.</li>
+            <li>Evolução: Ajustes e modificações no software para atender às mudanças nas necessidades do cliente, ou seja, manutenção.</li>
+        </ul>
+        <h3>5.1 Ciclo de vida de software (SDLC) – Metodologia Tradicional (Modelo Cascata)</h3>
+        <p>Existem muitos modelos de processo de software. A seguir é mostrado um modelo clássico conhecido como modelo cascata (waterfall). O modelo é mostrado em uma perspectiva arquitetural; isso significa que será mostrada sua estrutura, mas não os detalhes das atividades. Devido à tradicionalidade do modelo, muitas vezes, ele é referenciado como sendo o próprio SDLC.</p>
+        <p>O Modelo Cascata (Waterfall) é um modelo clássico e tradicional que distribui as atividades fundamentais do processo de software em cinco fases distintas e sequenciais:</p>
+        <ol>
+            <li>Requerimento: Levantamento e identificação de metas e restrições com os usuários.</li>
+            <li>Projeto: Mapeamento dos requisitos identificados em componentes de hardware e software.</li>
+            <li>Implementação: Implementação do projeto de software em unidades de programas, incluindo testes de unidade.</li>
+            <li>Verificação: Integração e teste das unidades de programas como um sistema completo.</li>
+            <li>Manutenção: Instalação e operação do sistema, correção de erros não descobertos anteriormente e identificação de novas funcionalidades que podem reiniciar o ciclo.</li>
+        </ol>
+        <img src="../imagens/i8.png" alt="">
+        <p>Vantagens do modelo Cascata incluem:</p>
+        <ul>
+            <li>Fácil gerenciamento devido a etapas bem definidas e sem sobreposição.</li>
+            <li>Foco na alta qualidade, com metas e pontos de revisão.</li>
+        </ul>
+        <p>Desvantagens incluem:</p>
+        <ul>
+            <li>Improdutividade quanto ao tempo, pois uma etapa só pode iniciar após a finalização da anterior.</li>
+            <li>Visão Sequencial que não corresponde ao mundo real, proporcionando pouca visibilidade do estado do projeto e demandando muito tempo para a primeira entrega.</li>
+        </ul>
+        <h3>5.2. Ciclo de vida de software – Metodologia Ágil</h3>
+        <p>A metodologia ágil surgiu em 2001 com o Manifesto Ágil como uma alternativa às abordagens tradicionais. Seu objetivo é satisfazer os clientes entregando com rapidez e maior frequência versões do software conforme suas necessidades. O foco está no software em si, não no projeto ou na documentação, sendo adequada para aplicações onde os requisitos mudam rapidamente.</p>
+        <p>Duas abordagens comuns na metodologia Ágil são o Extreme Programming (XP) e o Scrum.</p>
+        <h4>5.2.1 XP (eXtreme Programming)</h4>
+        <p>A Programação Extrema (XP) introduziu práticas ágeis ao desenvolvimento tradicional, refletindo os princípios do manifesto ágil. Algumas de suas práticas incluem:</p>
+        <ul>
+            <li>Propriedade coletiva: Desenvolvedores trabalham em todas as áreas do sistema, compartilhando a responsabilidade pelo código.</li>
+            <li>Integração contínua: O trabalho concluído é imediatamente integrado ao sistema completo, e todos os testes de unidade devem passar.</li>
+            <li>Planejamento incremental: Requisitos são registrados em "cartões de história", e a inclusão em um lançamento é baseada no tempo e prioridade.</li>
+            <li>Representante do cliente: Um usuário final (cliente) está disponível em tempo integral para a equipe de programação, trazendo os requisitos.</li>
+            <li>Programação em pares: Desenvolvedores trabalham em duplas, revisando e apoiando o trabalho um do outro.</li>
+            <li>Refatoração: Desenvolvedores continuamente refatoram o código para melhorias, mantendo-o simples e de fácil manutenção.</li>
+            <li>Projeto (design) simples: Apenas o design suficiente para os requisitos atuais é feito.</li>
+            <li>Lançamentos pequenos: Um conjunto mínimo de funcionalidade útil é desenvolvido primeiro, com lançamentos frequentes e incrementais.</li>
+            <li>Ritmo sustentável: Horas extras excessivas não são aceitáveis para evitar diminuição da qualidade e produtividade.</li>
+            <li>Desenvolvimento com testes a priori (test first): Testes automatizados são escritos para uma nova funcionalidade antes de sua implementação.</li>
+        </ul>
+        <h4>5.2.2 Scrum</h4>
+        <p>O Scrum é um dos frameworks de gerenciamento de projetos mais utilizados que surgiu do manifesto ágil. Ele é um framework estrutural, não uma metodologia, pois indica uma trajetória, mas não o "como fazer", sendo um "arcabouço de informações" ou um esqueleto.</p>
+        <p>O Scrum é composto por três artefatos, cinco eventos, cinco valores e três papéis.</p>
+        <p>A essência do Scrum são os Sprints, que são ciclos time-boxed de um mês ou menos. Durante uma Sprint, um incremento de produto potencialmente liberável é criado. As Sprints têm durações consistentes e uma nova inicia imediatamente após a anterior.</p>
+        <p>Os Artefatos no Scrum buscam maximizar a transparência das informações-chave, para que todos no time recebam as informações relevantes e tenham a mesma compreensão do que deve ser feito:</p>
+        <ul>
+            <li>Product Backlog: Uma lista ordenada de tudo que é necessário para o produto, sendo a única fonte de requisitos para qualquer mudança.</li>
+            <li>Sprint Backlog: Contém os itens do Product Backlog selecionados para a Sprint e o plano para entregar o incremento do produto, feito por e para os desenvolvedores.</li>
+            <li>Increment (Incremento): A soma de todos os itens do Product Backlog completados durante a Sprint e o valor dos incrementos das Sprints anteriores.</li>
+        </ul>
+        <p>Os Eventos formais do Scrum são para inspeção e adaptação:</p>
+        <ul>
+            <li>Sprint Planning (Planejamento da Sprint): Inicia a Sprint, estabelecendo o trabalho a ser realizado. É colaborativo de todo o Time Scrum.</li>
+            <li>Daily Scrum (Reunião diária): Uma reunião de aproximadamente 15 minutos para os Desenvolvedores inspecionarem o progresso e adaptarem o Sprint Backlog.</li>
+            <li>Sprint Review (Revisão da Sprint): Ocorre no final da Sprint para inspecionar o resultado e determinar futuras adaptações. O Time Scrum apresenta o trabalho às partes interessadas.</li>
+            <li>Sprint Retrospective (Retrospectiva da Sprint): Ocorre após a Sprint Review, com o objetivo de planejar maneiras de aumentar a qualidade e eficácia, discutindo o que correu bem e os problemas.</li>
+        </ul>
+        <p>Os Valores do Scrum, adicionados oficialmente em 2016, são:</p>
+        <ul>
+            <li>Coragem: Para fazer o certo e trabalhar em problemas difíceis.</li>
+            <li>Foco: No trabalho da Sprint e nos objetivos do time.</li>
+            <li>Comprometimento: Pessoal em alcançar os objetivos do time.</li>
+            <li>Respeito: Entre os membros do time como pessoas capazes e independentes.</li>
+            <li>Abertura: Do time e stakeholders para todo o trabalho e desafios.</li>
+        </ul>
+        <p>Os Papéis no Time Scrum, que não possui hierarquia, são:</p>
+        <ul>
+            <li>Product Owner: Responsável por maximizar o valor do produto e gerenciar o Product Backlog.</li>
+            <li>Scrum Master: Promove e suporta o Scrum, ajudando a todos a entenderem suas teorias, práticas, regras e valores.</li>
+            <li>Desenvolvedores (Developers): Realizam o trabalho de entregar um incremento potencialmente liberável do produto ao final de cada Sprint.</li>
+        </ul>
+        <img src="../imagens/i9.png" alt="">
+
+        <h2>Perguntas</h2>
+        <ol>
+            <li>Qual é a principal diferença entre software e programa, de acordo com as definições apresentadas?</li>
+            <li>Cite dois exemplos de software de sistema (básico) e explique brevemente suas funções.</li>
+            <li>Qual a função primordial de um Sistema Operacional e por que ele é considerado o software mais importante?</li>
+            <li>Explique a diferença entre um interpretador e um compilador no contexto de sistemas tradutores.</li>
+            <li>O que diferencia sintaxe de semântica em linguagens de programação?</li>
+            <li>Qual a diferença entre Git e GitHub, e qual o papel de cada um no versionamento de projetos?</li>
+            <li>Quais são as quatro atividades genéricas comuns a todos os processos de software, segundo Sommerville?</li>
+            <li>Descreva brevemente uma desvantagem do Modelo Cascata (Waterfall) no ciclo de vida de software.</li>
+            <li>O que são "Sprints" no Scrum e qual é o seu principal objetivo?</li>
+        </ol>
 
         <div class="back-link-container">
           <a href="../FDS.html" class="back-link">Voltar</a>

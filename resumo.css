@@ -15,7 +15,7 @@
 }
 
 .page-header p {
-  font-size: 1.2em;
+  font-size: 1.15em;
   color: #555;
   max-width: 700px;
   margin: 0 auto;
@@ -45,7 +45,7 @@ main h3 {
 
 /* Estilos para parágrafos */
 main p {
-  font-size: 1.2em;
+  font-size: 1.15em;
   margin-bottom: 1px;
   color: #444;
   text-align: justify; /* Justifica o texto para melhor leitura */
@@ -58,7 +58,7 @@ main ul, main ol {
 }
 
 main ul li, main ol li {
-  font-size: 1.2em;
+  font-size: 1.15em;
   line-height: 1.6;
   margin-bottom: 8px;
   color: #444;
@@ -121,7 +121,7 @@ main img {
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-weight: bold;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
