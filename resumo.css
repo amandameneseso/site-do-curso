@@ -1,0 +1,137 @@
+/* Estilos para o cabeçalho da página de disciplina */
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  background-color: #eaf6ff; /* Um azul bem clarinho para o cabeçalho */
+  border-bottom: 3px solid #63bcdf;
+}
+
+.page-header h1 {
+  font-size: 2.3em; /* Título principal maior */
+  color: #63bcdf;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.page-header p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Estilos para os temas (h2) */
+main h2 {
+  font-size: 2em;
+  color: #63bcdf;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: left; /* Alinha os títulos dos temas à esquerda */
+  padding-left: 15px;
+  border-left: 5px solid #63bcdf;
+}
+
+/* Estilos para os subtítulos (h3) */
+main h3 {
+  font-size: 1.6em;
+  color: #5a5a5a;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 8px;
+}
+
+/* Estilos para parágrafos */
+main p {
+  font-size: 1.2em;
+  margin-bottom: 1px;
+  color: #444;
+  text-align: justify; /* Justifica o texto para melhor leitura */
+}
+
+/* Estilos para listas (ul e ol) */
+main ul, main ol {
+  margin-bottom: 20px;
+  padding-left: 30px; /* Adiciona padding para os marcadores */
+}
+
+main ul li, main ol li {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Estilos para a tag <aside> (box de destaque) */
+main aside {
+  background-color: #eaf6ff; /* Um azul mais suave para caixas de destaque */
+  border-left: 5px solid #63bcdf; /* Borda esquerda marcante */
+  border-right: none;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+main aside p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+main aside p:last-child {
+  margin-bottom: 0; /* Remove margem do último parágrafo */
+}
+
+/* Estilos para blocos de código <code> */
+main code {
+  display: block; /* Ocupa a linha inteira */
+  background-color: #eaf6ff; /* Fundo escuro para código */
+  color: #444; /* Cor clara para texto do código */
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  font-family: 'Fira Code', 'Cascadia Code', monospace; /* Fonte monoespaçada */
+  font-size: 0.95em;
+  overflow-x: auto; /* Adiciona scroll horizontal se o código for muito longo */
+  white-space: pre-wrap; /* Quebra linhas longas, mas mantém formatação */
+}
+
+/* Estilos para imagens dentro do conteúdo */
+main img {
+  max-width: 60%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+  height: auto;
+  display: block; /* Remove espaço extra abaixo da imagem */
+  margin: 30px auto; /* Centraliza e adiciona margem */
+  border-radius: 8px;
+}
+
+/* Estilos para o link "Voltar" */
+.back-link-container {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 25px;
+  background-color: #6c757d; /* Cinza para voltar */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-link:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+.back-link::before {
+  content: '🔙'; /* Ícone de volta */
+  margin-right: 10px;
+}

@@ -1,0 +1,107 @@
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #63bcdf;
+}
+
+.page-header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.section-content {
+  border: 1px dashed #4ccdff;
+  background-color: #effaff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.section-content h2 {
+  color: #5b5b5b;
+  margin-top: 0;
+  border-bottom: 2px solid #63bcdf;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.section-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-content ul li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.section-content ul li::before {
+  content: "📚"; /* Ícone de livro como marcador */
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 1.2em;
+  top: 0;
+}
+
+.section-content ul.no-bullet {
+  list-style: none;
+}
+
+.section-content ul.no-bullet li::before {
+  content: ""; /* Remove o ícone se for uma lista sem marcadores específicos */
+}
+
+.section-content .item-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.section-content .item-description {
+  color: #777;
+  font-size: 0.95em;
+  margin-top: 5px;
+}
+
+.section-content .item-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #61adc0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.section-content .item-link:hover {
+  background-color: #54a0b3;
+}
+
+.back-link-container {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.back-link:hover {
+    transform: scale(1.05);
+}

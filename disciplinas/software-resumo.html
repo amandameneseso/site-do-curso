@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de Desenvolvimento de Software</title>
+    <meta
+      content="Conteúdo e materiais para o Módulo Introdutório do curso."
+      name="description"
+    />
+    <link href="../imagens/favicon_starjar4.gif" rel="icon" type="image/x-icon" />
+    <link href="../style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../resumo.css">
+    <script src="../layout.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <main id="content">
+        <div class="page-header">
+          <h1>Software</h1>
+        </div>
+
+        <div>
+            <h2>TEMA 1 – Software, Programas e Sistemas</h2>
+            <p>Softwares, programas e sistemas são elementos constantes em nossa vida cotidiana, e é fundamental entender suas distinções.</p>
+            <h3>1.1 Software e Programas</h3>
+            <p>Uma definição técnica de software, dada por Pressman (2001), compreende:</p>
+            <ul>
+                <li>Instruções (programas de computador) que, quando executadas, fornecem características, funções e desempenho desejados.</li>
+                <li>Estruturas de dados que permitem aos programas manipular informações adequadamente.</li>
+                <li>Informação descritiva, impressa ou virtual, que descreve a operação e o uso dos programas.</li>
+            </ul>
+            <p>Simplificando, um software é um programa de computador e toda a documentação associada a ele.</p>
+            <p>Um programa, por sua vez, é definido na área de TI como uma sequência de passos ou instruções definidas por um algoritmo. Pode-se pensar em um algoritmo como uma "receita de bolo" ou um tutorial.</p>
+            <aside>
+                <p>Qual é a diferença entre um software e um programa?</p>
+                
+                <p>A principal distinção é que **um programa é o conjunto de instruções executáveis**, enquanto o **software abrange não apenas essas instruções, mas também as estruturas de dados que ele manipula e toda a documentação que o descreve e acompanha**. Os programas são, na verdade, uma parte essencial do que constitui o software.</p>
+            </aside>
+            <p>O software pode ser classificado de diversas maneiras. Uma adaptação da classificação de Marçula (2009) distingue:</p>
+            <ul>
+                <li>Software de sistema (básico)</li>
+                <li>Software aplicativo</li>
+            </ul>
+            <h3>1.2 Software de sistema (básico)</h3>
+            <p>O software básico é uma coleção de programas que apoiam o funcionamento de outros programas, realizando as tarefas de gerenciamento necessárias. Nesta categoria, encontramos:</p>
+            <ul>
+                <li>Sistemas Operacionais (SO): software responsável pelo funcionamento geral dos sistemas de computação. Sem eles, os sistemas não funcionariam. Exemplos incluem Windows, Unix, Linux e MacOS. Devido à sua importância, o sistema operacional é o software mais crucial, supervisionando os processos e gerenciando hardware e software do computador.</li>
+                <img src="../imagens/i1.png" alt="">
+                <li>Software Utilitário ou Ferramentas de Sistema: Acompanham o sistema operacional e o auxiliam em suas tarefas, como gerenciamento de dispositivos, mídias e programas. Eles fornecem ferramentas para organizar discos, verificar memória e corrigir falhas. São considerados "úteis" ao sistema operacional.</li>
+                <ul>
+                    <li>Exemplos de utilitários incluem:</li>
+                    <ul>
+                        <li>Antivírus: Detecta e remove programas maliciosos (vírus).</li>
+                        <li>Compactadores: Reduzem o tamanho de arquivos.</li>
+                        <li>Emuladores: Simulam ambientes específicos, como o VmWare que simula um computador.</li>
+                        <li>Desfragmentadores: Eliminam a fragmentação de um sistema, juntando partes de arquivos dispersas para melhorar o desempenho.</li>
+                        <li>Formatadores e backup: Apagam todos os dados e reinstalam o sistema.</li>
+                        <img src="../imagens/i2.png" alt="">
+                    </ul>
+                </ul>
+            </ul>
+            <h3>1.3 Software aplicativo</h3>
+            <p>Também chamado de aplicativo ou "app", o software aplicativo realiza algum trabalho específico para o usuário. Exemplos são planilhas, editores de texto, navegadores (browsers) e editores de imagem.</p>
+            <img src="../imagens/i3.png" alt="">
+
+            <h2>TEMA 2 – Sistema Operacional</h2>
+            <p>Um sistema pode ser definido como um conjunto de partes que interagem para alcançar um objetivo. No contexto de software, um sistema é um conjunto de softwares que interage para alcançar um determinado objetivo.</p>
+            <p>O Sistema Operacional, como visto, faz parte da categoria de software básico. Ele é responsável pela supervisão dos processos executados em um computador, gerenciando todo o hardware e software e realizando a "comunicação" entre eles. Um "processo" pode ser entendido como um programa em execução.</p>
+            <p>O SO atua como uma camada intermediária entre o aplicativo utilizado pelo usuário e o hardware.</p>
+            <img src="../imagens/i4.png" alt="">
+            <p>As funções do sistema operacional incluem:</p>
+            <ul>
+                <li>Facilitar o uso do computador pelo usuário, simplificando a utilização de seus recursos (hardware e software).</li>
+                <li>Gerenciar os recursos do computador, incluindo placa de vídeo, placa de rede, memórias, softwares instalados e periféricos como mouse e headset.</li>
+                <li>Controlar a execução de programas pela CPU (Central Process Unit – o processador).</li>
+            </ul>
+            <h3>2.1 Sistemas Tradutores</h3>
+            <p>Como parte do sistema básico, os sistemas tradutores são cruciais, especialmente para desenvolvedores. Eles convertem programas escritos em linguagens de programação de alto nível para uma linguagem de máquina (bits) que o computador pode entender e executar.</p>
+            <p>Linguagens de programação podem ser divididas em duas categorias principais: linguagens interpretadas e linguagens compiladas. A principal diferença entre elas está no processo de tradução do código fonte para código executável. Linguagens interpretadas são mais fáceis de aprender e de prototipar, enquanto linguagens compiladas oferecem maior performance e segurança.</p>
+            <img src="../imagens/i5.png" alt="">
+            <p>Existem dois tipos principais de tradutores:</p>
+            <ul>
+                <li>Interpretadores: O código é interpretado linha por linha. A analogia é um intérprete simultâneo que traduz enquanto se fala. Exemplos de linguagens interpretadas são Python, Ruby, JavaScript e PHP.</li>
+                <img src="../imagens/i6.png" alt="">
+                <li>Compiladores: Traduzem o código todo de uma vez, gerando um arquivo executável (por exemplo, um .exe). A analogia é a tradução de um livro completo antes da entrega. Exemplos de linguagens compiladas são C, C++, Java e Rust.</li>
+                <img src="../imagens/i7.png" alt="">
+            </ul>
+            <p>A maioria das linguagens de programação pode ter implementações compiladas e interpretadas – a linguagem em si não é necessariamente compilada ou interpretada. Porém, para fins de simplicidade, elas são normalmente referidas deste modo. Python, por exemplo, pode ser executado como um programa compilado ou como uma linguagem interpretada em modo interativo.</p>
+
+            <h2>TEMA 3 – Algoritmos e Linguagens</h2>
+            <h3>3.1 Algoritmos</h3>
+            <p>Um algoritmo é uma sequência de passos que visa atingir um objetivo bem definido. Esta definição, de Forbellone (2022), ressalta que o algoritmo representa o raciocínio lógico envolvido na solução de um problema e pode ser traduzido para qualquer linguagem de programação.</p>
+            <p>Para entender a forma como os programas são construídos, é importante diferenciar sintaxe e semântica.</p>
+            <ul>
+                <li>Sintaxe: Refere-se às regras, premissas e restrições que determinam como as palavras, expressões, comandos ou unidades de programas devem ser combinadas para formar enunciados ou estruturas corretas em uma determinada linguagem. Um erro de sintaxe torna a expressão incorreta formalmente.</li>
+                <li>Semântica: Relaciona-se com o conteúdo, o significado formal das expressões, comandos ou unidades de programas. Erros de semântica estão ligados à lógica de programação, ou seja, a expressão pode estar sintaticamente correta, mas não fazer sentido lógico.</li>
+            </ul>
+            <p>Exemplo de algoritmo: calcular a média de provas e classificar</p>
+            <ol>
+                <li>Obter as duas notas de provas</li>
+                <li>Calcular a média aritmética</li>
+                <li>Se a média for igual ou maior que 7, o aluno está aprovado</li>
+                <li>Se não, está reprovado</li>
+            </ol>
+            <h3>3.2 Linguagens</h3>
+            <p>Depois de desenvolver um algoritmo, que representa a lógica de programação e a estrutura de dados, ele é implementado em uma linguagem de programação. Cada linguagem de programação possui uma sintaxe específica e regras gramaticais próprias.</p>
+            <p>Comando para imprimir "Olá Mundo!" varia em linguagens:</p>
+            <p>C:</p>
+            <code>printf("Olá Mundo!")
+            </code>
+            <p>Java:</p>
+            <code>System.out.print("Olá Mundo!")
+            </code>
+            <p>Python:</p>
+            <code>print("Olá Mundo!")</code>
+            <p>Abaixo podemos visualizar o algoritmo do exemplo sobre média de provas implementado em três linguagens de programação diferentes.</p>
+            <p>C:</p>
+            <code>
+//Obter as duas notas de provas 
+printf("Digite a primeira nota: "); 
+scanf_s("%d", &nota1); 
+printf("Digite a segunda nota: "); 
+scanf_s("%d", &nota2); 
+//Calcular a média aritmética 
+media = (nota1 + nota2) / 2; 
+//Se a média for igual ou maior que 7, o aluno foi
+aprovado 
+if (media >= 7) 
+printf("Aprovado");     
+//Se não, ele foi reprovado
+else 
+printf("Reprovado");
+            </code>
+            <p>Java:</p>
+            <code>
+//Obter as duas notas de provas 
+System.out.println("Digite a primeira nota: "); 
+float nota1 = teclado.nextFloat(); 
+System.out.println("Digite a segunda nota: "); 
+float nota2 = teclado.nextFloat(); 
+//Calcular a média aritmética 
+float media = (nota1 + nota2)/2; 
+//Se a média for igual ou maior que 7,o aluno foi aprovado, 
+if (media >= 7) 
+System.out.println("Aprovado"); 
+//Se não, ele foi reprovado 
+else 
+System.out.println("Reprovado");
+            </code>
+            <p>Python:</p>
+            <code>
+#Obter as duas notas de provas 
+nota1 = float(input("Digite a primeira nota: ")) 
+nota2 = float(input("Digite a segunda nota: ")) 
+#Calcular a média aritmética 
+media = (nota1 + nota2)/2 
+#Se a média for igual ou maior que 7, o aluno foi aprovado
+if media >= 7: 
+print("Aprovado") 
+#Se não, ele foi reprovado 
+else: 
+print("Reprovado")
+            </code>
+            <p>A estrutura de dados refere-se à forma como os dados são armazenados e organizados na memória, com cada linguagem tendo comandos específicos para manipulá-las, como os vetores (arrays ou listas).</p>
+        </div>
+
+        <h2>TEMA 4 – Glossário do Desenvolvedor de Software</h2>
+
+        <div class="back-link-container">
+          <a href="../FDS.html" class="back-link">Voltar</a>
+        </div>
+      </main>
+    </div>
+    </body>
+</html>
