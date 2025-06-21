@@ -25,15 +25,18 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 25px;
-        margin-top: 30px;
+        margin-top: 5px;
       }
       .card {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        border: 1px dashed #4ccdff;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 1em 0;
+        background: #effaff;
+      }
+      .card h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
       }
       .card p {
         font-size: 0.95em;
@@ -43,117 +46,117 @@
       .card-link {
         display: inline-block;
         /* background-color: #007bff; */
-        padding: 10px 15px;
-        border-radius: 5px;        
+        /* padding: 10px 15px; */
+        border-radius: 5px;
         text-decoration: none;
         font-weight: bold;
         transition: background-color 0.2s ease;
       }
 
-    /* --- Estilos do Calendário Grande --- */
-    .calendar-container-lg {
-      width: 100%;
-      max-width: 800px; /* Largura maior para o calendário */
-      margin: 20px auto;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      font-family: 'Nunito', sans-serif; /* Usando uma das suas fontes */
-    }
+      /* --- Estilos do Calendário Grande --- */
+      .calendar-container-lg {
+        width: 100%;
+        max-width: 800px; /* Largura maior para o calendário */
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: "Nunito", sans-serif; /* Usando uma das suas fontes */
+      }
 
-    .calendar-header-lg {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 25px;
-      background-color: #effaff;;
-      color: #6d6d6d;
-      /* border-bottom: 1px solid #0056b3; */
-      font-size: 1.1em;
-    }
+      .calendar-header-lg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px;
+        background-color: #effaff;
+        color: #6d6d6d;
+        /* border-bottom: 1px solid #0056b3; */
+        font-size: 1.1em;
+      }
 
-    .calendar-header-lg h3 {
-      margin: 0;
-      font-size: 1.3em; /* Título maior */
-    }
+      .calendar-header-lg h3 {
+        margin: 0;
+        font-size: 1.3em; /* Título maior */
+      }
 
-    .calendar-header-lg button {
-      color: rgb(151, 151, 151);
-      cursor: pointer;
-    }
+      .calendar-header-lg button {
+        color: rgb(151, 151, 151);
+        cursor: pointer;
+      }
 
-    .calendar-header-lg button:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
+      .calendar-header-lg button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
 
-    .calendar-weekdays-lg {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      padding: 12px 0;
-      background-color: #f0f0f0;
-      border-bottom: 1px solid #dee2e6;
-      font-weight: bold;
-      font-size: 1em;
-      color: #444;
-    }
+      .calendar-weekdays-lg {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 12px 0;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #dee2e6;
+        font-weight: bold;
+        font-size: 1em;
+        color: #444;
+      }
 
-    .calendar-weekdays-lg div {
-      text-align: center;
-      padding: 8px 0;
-    }
+      .calendar-weekdays-lg div {
+        text-align: center;
+        padding: 8px 0;
+      }
 
-    .calendar-days-lg {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      padding: 10px;
-    }
+      .calendar-days-lg {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 10px;
+      }
 
-    .calendar-days-lg .day-cell {
-      min-height: 110px; /* Espaço para anotações */
-      padding: 10px;
-      border: 1px solid #eee;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; /* Alinha o conteúdo ao topo-esquerda */
-      gap: 5px;
-      position: relative; /* Para posicionar o número do dia */
-      background-color: #ffffff;
-      transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    }
+      .calendar-days-lg .day-cell {
+        min-height: 110px; /* Espaço para anotações */
+        padding: 10px;
+        border: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinha o conteúdo ao topo-esquerda */
+        gap: 5px;
+        position: relative; /* Para posicionar o número do dia */
+        background-color: #ffffff;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      }
 
-    .calendar-days-lg .day-number {
-      font-size: 1.1em;
-      color: #333;
-      margin-bottom: 5px;
-      position: absolute; /* Posiciona no canto superior esquerdo */
-      top: 5px;
-      left: 8px;
-    }
+      .calendar-days-lg .day-number {
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 5px;
+        position: absolute; /* Posiciona no canto superior esquerdo */
+        top: 5px;
+        left: 8px;
+      }
 
-    .calendar-days-lg .day-cell.today .day-number {
-      color: #50afdb; /* Cor do número do dia atual */
-      font-weight: bold;
-    }
+      .calendar-days-lg .day-cell.today .day-number {
+        color: #50afdb; /* Cor do número do dia atual */
+        font-weight: bold;
+      }
 
-    .calendar-days-lg .day-cell.empty {
-      background-color: #fdfdfd; /* Fundo para dias vazios */
-      border: 1px dashed #f0f0f0;
-      cursor: default;
-    }
+      .calendar-days-lg .day-cell.empty {
+        background-color: #fdfdfd; /* Fundo para dias vazios */
+        border: 1px dashed #f0f0f0;
+        cursor: default;
+      }
 
-    .calendar-days-lg .day-cell.empty:hover {
-      background-color: #fdfdfd;
-      box-shadow: none;
-    }
-    /* New: Styles for manual notes added directly in HTML */
-    .calendar-days-lg .day-cell .manual-note {
-      font-size: 0.85em;
-      color: #555;
-      margin-top: 25px; /* Adjust to clear the day number */
-      line-height: 1.4;
-      width: 100%; /* Take full width of cell below number */
-      padding: 0 5px; /* Small padding within the cell for notes */
-    }
+      .calendar-days-lg .day-cell.empty:hover {
+        background-color: #fdfdfd;
+        box-shadow: none;
+      }
+      /* New: Styles for manual notes added directly in HTML */
+      .calendar-days-lg .day-cell .manual-note {
+        font-size: 0.85em;
+        color: #555;
+        margin-top: 25px; /* Adjust to clear the day number */
+        line-height: 1.4;
+        width: 100%; /* Take full width of cell below number */
+        padding: 0 5px; /* Small padding within the cell for notes */
+      }
     </style>
   </head>
   <body>
@@ -178,27 +181,21 @@
         <section class="disciplines-grid">
           <div class="card">
             <h3>Módulo Introdutório de Conceitos Básicos de Computação</h3>
-            <p>
-              Regular
-            </p>
+            <p>Regular</p>
             <a href="disciplinas/modulo-introdutorio.html" class="card-link"
               >Ver Conteúdo</a
             >
           </div>
 
           <div class="card">
-            <h3>Fundamentos de Desenvolvimento de Software </h3>
+            <h3>Fundamentos de Desenvolvimento de Software</h3>
             <p>Regular</p>
-            <a href="disciplinas/FDS.html" class="card-link"
-              >Ver Conteúdo</a
-            >
+            <a href="disciplinas/FDS.html" class="card-link">Ver Conteúdo</a>
           </div>
 
           <div class="card">
             <h3>Fundamentos de Design de Sistemas</h3>
-            <p>
-              Regular
-            </p>
+            <p>Regular</p>
             <a
               href="disciplinas/algoritmos-estrutura-dados.html"
               class="card-link"
@@ -253,11 +250,10 @@
               <div>Sex</div>
               <div>Sáb</div>
             </div>
-            <div class="calendar-days-lg" id="calendarDaysLg">
-              </div>
+            <div class="calendar-days-lg" id="calendarDaysLg"></div>
           </div>
         </section>
-        </main>
+      </main>
     </div>
     <script src="./calendar.js"></script>
   </body>

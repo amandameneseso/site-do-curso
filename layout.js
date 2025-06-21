@@ -36,7 +36,7 @@ function headerHTML() {
           <div class="sidebar-title"> Disciplinas </div>
           <ul>
             <li><a class="link" href="disciplinas/modulo-introdutorio.html">Módulo Introdutório de Conceitos Básicos de Computação</a></li>
-            <li><a class="link" href="sobre.html">Fundamentos de Desenvolvimento de Software</a></li>
+            <li><a class="link" href="disciplinas/FDS.html">Fundamentos de Desenvolvimento de Software</a></li>
             <li><a class="link" href="/page2">Fundamentos de Design de Sistemas</a></li>
           </ul>
         </nav>
